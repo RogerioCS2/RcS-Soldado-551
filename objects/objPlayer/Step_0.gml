@@ -1,0 +1,3 @@
+/// @description Update
+MovimentoPlayer();
+TiroPlayer();

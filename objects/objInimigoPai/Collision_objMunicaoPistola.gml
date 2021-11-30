@@ -1,0 +1,3 @@
+/// @description 
+	DanoInimigo(1);
+
