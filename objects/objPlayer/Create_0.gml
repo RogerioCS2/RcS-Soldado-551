@@ -28,3 +28,18 @@ TiroPlayer = function(){
 		instance_create_layer(x + 4, y, layer, objMunicaoPistola) 
 	}	
 }
+
+LevandoDano = function(){
+	if(place_meeting(x, y, objBolaPrimeiroInimigo)){apanhando = true;}	
+	if(place_meeting(x, y, objInimigoPai)){apanhando = true;}	
+	
+	if(apanhando){		
+		image_blend = c_red;
+		tempoDano--;
+		if(tempoDano <= 0){
+			apanhando = false;
+			tempoDano = room_speed / 4;
+			image_blend = c_white;
+		}
+	}
+}

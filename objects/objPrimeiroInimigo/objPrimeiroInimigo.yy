@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprBoss",
-    "path": "sprites/sprBoss/sprBoss.yy",
+    "name": "sprPrimeiroInimigo",
+    "path": "sprites/sprPrimeiroInimigo/sprPrimeiroInimigo.yy",
   },
   "solid": false,
   "visible": true,
@@ -23,11 +23,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"objMunicaoPistola","path":"objects/objMunicaoPistola/objMunicaoPistola.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -35,7 +31,7 @@
     "path": "folders/Objetos/Inimigos.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objBoss",
+  "name": "objPrimeiroInimigo",
   "tags": [],
   "resourceType": "GMObject",
 }

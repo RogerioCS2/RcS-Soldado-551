@@ -1,16 +1,13 @@
 {
   "spriteId": {
-    "name": "sprBoss",
-    "path": "sprites/sprBoss/sprBoss.yy",
+    "name": "sprBolaPrimeiroInimigo",
+    "path": "sprites/sprBolaPrimeiroInimigo/sprBolaPrimeiroInimigo.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "objInimigoPai",
-    "path": "objects/objInimigoPai/objInimigoPai.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -25,8 +22,8 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"objMunicaoPistola","path":"objects/objMunicaoPistola/objMunicaoPistola.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"objColisor","path":"objects/objColisor/objColisor.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -35,7 +32,7 @@
     "path": "folders/Objetos/Inimigos.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objBoss",
+  "name": "objBolaPrimeiroInimigo",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -1,7 +1,7 @@
 /// @description Funções e Variaveis
 
 tremer = 30;
-tempoTremida = 7;
+tempoTremida = 10;
 
 TelaTremendo = function(){
 	tempoTremida--; 
