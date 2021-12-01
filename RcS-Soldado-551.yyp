@@ -2,10 +2,12 @@
   "resources": [
     {"id":{"name":"objSangueJorrando","path":"objects/objSangueJorrando/objSangueJorrando.yy",},"order":2,},
     {"id":{"name":"sprMunicaoPistola","path":"sprites/sprMunicaoPistola/sprMunicaoPistola.yy",},"order":2,},
+    {"id":{"name":"sprMenu","path":"sprites/sprMenu/sprMenu.yy",},"order":0,},
     {"id":{"name":"objGameController","path":"objects/objGameController/objGameController.yy",},"order":0,},
     {"id":{"name":"sprBoss","path":"sprites/sprBoss/sprBoss.yy",},"order":3,},
     {"id":{"name":"antComandosGit","path":"notes/antComandosGit/antComandosGit.yy",},"order":1,},
     {"id":{"name":"objExplosaoInimigo","path":"objects/objExplosaoInimigo/objExplosaoInimigo.yy",},"order":0,},
+    {"id":{"name":"objMenu","path":"objects/objMenu/objMenu.yy",},"order":0,},
     {"id":{"name":"Arena1","path":"rooms/Arena1/Arena1.yy",},"order":0,},
     {"id":{"name":"sprBolaPrimeiroInimigo","path":"sprites/sprBolaPrimeiroInimigo/sprBolaPrimeiroInimigo.yy",},"order":4,},
     {"id":{"name":"objMunicaoPistola","path":"objects/objMunicaoPistola/objMunicaoPistola.yy",},"order":2,},
@@ -29,6 +31,7 @@
     {"id":{"name":"sndPrimeiraFase","path":"sounds/sndPrimeiraFase/sndPrimeiraFase.yy",},"order":0,},
     {"id":{"name":"sprExplosaoInimigo","path":"sprites/sprExplosaoInimigo/sprExplosaoInimigo.yy",},"order":0,},
     {"id":{"name":"sprSangueNoChao","path":"sprites/sprSangueNoChao/sprSangueNoChao.yy",},"order":3,},
+    {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},"order":1,},
     {"id":{"name":"objColisor","path":"objects/objColisor/objColisor.yy",},"order":0,},
     {"id":{"name":"objMira","path":"objects/objMira/objMira.yy",},"order":1,},
     {"id":{"name":"sprSangueJorrando","path":"sprites/sprSangueJorrando/sprSangueJorrando.yy",},"order":2,},
@@ -50,6 +53,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"roomId":{"name":"Arena1","path":"rooms/Arena1/Arena1.yy",},},
   ],
   "Folders": [
@@ -78,6 +82,8 @@
     {"folderPath":"folders/Sprites/Itens.yy","order":6,"resourceVersion":"1.0","name":"Itens","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objetos/Controladores.yy","order":5,"resourceVersion":"1.0","name":"Controladores","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objetos/Cenario.yy","order":6,"resourceVersion":"1.0","name":"Cenario","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Outros.yy","order":7,"resourceVersion":"1.0","name":"Outros","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objetos/Outros.yy","order":7,"resourceVersion":"1.0","name":"Outros","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

@@ -12,10 +12,10 @@ DestuindoBola = function(){
 	tempo--;
 	if(tempo < 0){
 		instance_destroy();	
-		if(x < 1000 && y < 1000){
+		if(x < 922 && y < 922){
 			instance_create_layer(x + 20, y +20, "Inimigos", objPrimeiroInimigo);
 		}else{
-			instance_create_layer(x - 20, y -20, "Inimigos", objPrimeiroInimigo);			
+			instance_create_layer(x- 20, y -20, "Inimigos", objPrimeiroInimigo);			
 		}
 	
 		if(objGameController.numeroInimigos < 25){
