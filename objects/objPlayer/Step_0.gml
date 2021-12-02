@@ -2,3 +2,4 @@
 MovimentoPlayer();
 TiroPlayer();
 LevandoDano();
+LimitesTela();

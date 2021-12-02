@@ -81,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Player",
-    "path": "folders/Sprites/Player.yy",
+    "name": "Animacoes",
+    "path": "folders/Sprites/Player/Animacoes.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprPlayer",

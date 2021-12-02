@@ -1,4 +1,4 @@
 /// @description
 event_inherited();
-HelpBoss();
+global.HelpBoss();
 

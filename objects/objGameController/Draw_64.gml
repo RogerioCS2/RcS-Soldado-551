@@ -1,2 +1,2 @@
 /// @description Update Tela
-MarcadorInimigos();
+MarcadorPontos();

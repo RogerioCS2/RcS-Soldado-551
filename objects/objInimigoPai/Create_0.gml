@@ -27,38 +27,46 @@ DestroindoLimites = function(){
 	}
 }
 
-DanoInimigo = function(vel){	
+partiuBriga = function(){
+	direction = point_direction(x, y, objPlayer.x, objPlayer.y);
+	image_angle = point_direction(x,y, objPlayer.x, objPlayer.y);
+}
+
+DanoInimigo = function(vel){
+	partiuBriga();
 	vida--;
 	if(vida <= 0){
+		global.AdicionaPontos();
 		global.SubtrairInimigos();		
 		instance_create_layer(x, y, layer, objExplosaoInimigo);
 		audio_play_sound(sndSomGosma, 10, false);
 		instance_create_layer(x, y, layer, objTremeTela);
 		instance_destroy();		
 	}
-	direction = point_direction(x, y, objPlayer.x, objPlayer.y);
-	image_angle = point_direction(x,y, objPlayer.x, objPlayer.y);
 	speed = vel;
 }
 
 MovimentoInimigos = function(vel){
 	image_angle = point_direction(x,y, objPlayer.x, objPlayer.y);
 	distancia = distance_to_object(objPlayer);	
-	if(distancia < 200){ seguirPlayer = true;}
-	if(seguirPlayer){
-		direction = point_direction(x, y, objPlayer.x, objPlayer.y);	
-		speed = vel;	
-	}
+	if(objGameController.level < 3){
+		if(distancia < 200){ seguirPlayer = true;}
+		if(seguirPlayer){
+			partiuBriga();
+			speed = vel;	
+		}
+	}else{
+		partiuBriga();
+	}	
 }
 
 bossPedindoAjuda = function(){
-	if(objBoss.pedindoAjuda == true && boss = false){
+	if(objGameController.pedindoAjuda == true && boss = false){
 		show_debug_message("Atacar");
-		direction = point_direction(x, y, objPlayer.x, objPlayer.y);
-		image_angle = point_direction(x,y, objPlayer.x, objPlayer.y);
+		partiuBriga();
 		speed = 2;		
 	}
-	if(objBoss.pedindoAjuda == true && boss = false){
+	if(objGameController.pedindoAjuda == false && boss = false){		
 		speed = 1;
 	}
 }
