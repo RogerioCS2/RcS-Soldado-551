@@ -4,8 +4,12 @@ tempoTiro = 0;
 velocidade = 5;
 apanhando = false;
 tempoDano = room_speed / 4;
+vidaMaximaPlayer = 100;
 vidaPlayer = 100;
-arma = 2;
+arma = 1;
+tempoArma = 0;
+tempoMetralhadoura = 500;
+pegouArma = false;
 
 LimitesTela = function(){
 	x = clamp(x, 0 + sprite_width / 2, room_width - sprite_width / 2);
@@ -27,14 +31,25 @@ MovimentoPlayer = function(){
 	y += movimentoVertical;	
 }
 
-TiroPlayer = function(){
+TiroPlayer = function(equip){
 	tempoTiro--;
 	atirar = mouse_check_button(mb_left);
-	if(atirar && tempoTiro < 0){
-		if(arma == 1){tempoTiro = 13;}
-		if(arma == 2){tempoTiro = 5;}	
-		if(arma == 3){tempoTiro = 2;}
-		instance_create_layer(x + 4, y, layer, objMunicaoPistola) 
+	if(atirar && tempoTiro < 0){		
+		if(arma = 1){
+			sprite_index = sprPistola;
+			tempoTiro = 13;			
+		}else if(arma = 2){
+			sprite_index = sprPlayerMetralhadoura;
+			tempoTiro = 5;	
+			tempoMetralhadoura--;
+			show_debug_message(tempoMetralhadoura);
+			if(tempoMetralhadoura <= 0){
+				tempoMetralhadoura = 500;
+				pegouArma = false;
+				arma = 1;				
+			}
+		}	
+		instance_create_layer(x + 4, y, layer, objMunicaoPistola); 
 	}	
 }
 

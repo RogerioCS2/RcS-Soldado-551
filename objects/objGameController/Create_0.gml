@@ -24,6 +24,13 @@ global.AdicionaPontos = function(){
 	pontos += 1 * level;	
 }
 
+BarraDeVida = function(){
+	var escala = 4;
+	draw_sprite_ext(sprFundoBarra, 1, 9, 25, escala, escala, 0, c_white, 1);
+	draw_sprite_ext(sprMarcador, 1, 11, 25, (objPlayer.vidaPlayer / objPlayer.vidaMaximaPlayer) * escala, escala, 0, c_white, 1);
+	draw_sprite_ext(sprBarraVida, 1, 9, 25, escala, escala, 0, c_white, 1);
+}
+
 sobeLevel = function(){
 	if(pontos > proximoLevel){
 		proximoLevel *= 2;
@@ -45,10 +52,12 @@ CriarPlayer = function(){
 criarInimigosSimples = function(){
 	var posicaoX = random_range(100, 1300);
 	var posicaoY = random_range(100, 1300);
-	if(level > 7 && !bossGerado){
-		bossGerado = true;
+	
+	if(level >= 7 && !bossGerado){
 		instance_create_layer(posicaoX, posicaoY, "Inimigos", objBoss);		
+		bossGerado = true;		
 	}	
+	
 	if(numeroInimigos < 25 && !bossGerado){
 		if(level < 7){
 			numeroInimigos++;
@@ -68,8 +77,3 @@ CancelaAjuda = function(){
 		}	
 	}
 }
-
-
-
-
-	

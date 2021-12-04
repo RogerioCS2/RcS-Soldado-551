@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprPistola",
-    "path": "sprites/sprPistola/sprPistola.yy",
+    "name": "sprMetralhadoura",
+    "path": "sprites/sprMetralhadoura/sprMetralhadoura.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,18 +21,16 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"objColisor","path":"objects/objColisor/objColisor.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Player",
-    "path": "folders/Objetos/Player.yy",
+    "name": "Itens",
+    "path": "folders/Objetos/Itens.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objPlayer",
+  "name": "objMetralhadoura",
   "tags": [],
   "resourceType": "GMObject",
 }
