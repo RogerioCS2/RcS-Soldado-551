@@ -23,6 +23,7 @@
     {"id":{"name":"sprPrimeiroInimigo","path":"sprites/sprPrimeiroInimigo/sprPrimeiroInimigo.yy",},"order":1,},
     {"id":{"name":"objSangueNoChao","path":"objects/objSangueNoChao/objSangueNoChao.yy",},"order":3,},
     {"id":{"name":"objMetralhadoura","path":"objects/objMetralhadoura/objMetralhadoura.yy",},"order":0,},
+    {"id":{"name":"sprNomePlayer","path":"sprites/sprNomePlayer/sprNomePlayer.yy",},"order":1,},
     {"id":{"name":"objSegundoInimigo","path":"objects/objSegundoInimigo/objSegundoInimigo.yy",},"order":4,},
     {"id":{"name":"objBoss","path":"objects/objBoss/objBoss.yy",},"order":1,},
     {"id":{"name":"objTremeTela","path":"objects/objTremeTela/objTremeTela.yy",},"order":4,},

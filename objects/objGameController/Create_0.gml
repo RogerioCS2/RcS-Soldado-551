@@ -33,9 +33,10 @@ global.AdicionaPontos = function(){
 
 BarraDeVida = function(){
 	var escala = 4;
-	draw_sprite_ext(sprFundoBarra, 1, 9, 25, escala, escala, 0, c_white, 1);
-	draw_sprite_ext(sprMarcador, 1, 11, 25, (objPlayer.vidaPlayer / objPlayer.vidaMaximaPlayer) * escala, escala, 0, c_white, 1);
-	draw_sprite_ext(sprBarraVida, 1, 9, 25, escala, escala, 0, c_white, 1);
+	draw_sprite_ext(sprFundoBarra, 1, 459, 20, escala, escala, 0, c_white, 1);
+	draw_sprite_ext(sprMarcador, 1, 461, 20, (objPlayer.vidaPlayer / objPlayer.vidaMaximaPlayer) * escala, escala, 0, c_white, 1);
+	draw_sprite_ext(sprBarraVida, 1, 459, 20, escala, escala, 0, c_white, 1);
+	draw_sprite(sprNomePlayer, 1, 11, 10);
 }
 
 sobeLevel = function(){
@@ -47,12 +48,12 @@ sobeLevel = function(){
 
 MarcadorPontos = function(){
 	draw_set_colour(c_lime);	
-	draw_text(765, 20, "Total Inimigos: ");
-	draw_text(900, 20, numeroInimigos);
-	draw_text(965, 20, "Level: ");	
-	draw_text(1020, 20, level);
-	draw_text(1050, 20, "Total Pontos: ");
-	draw_text(1170, 20, pontos);	
+	draw_text(765, 15, "Total Inimigos: ");
+	draw_text(900, 15, numeroInimigos);
+	draw_text(965, 15, "Level: ");	
+	draw_text(1020, 15, level);
+	draw_text(1050, 15, "Total Pontos: ");
+	draw_text(1170, 15, pontos);
 }
 
 CriarPlayer = function(){

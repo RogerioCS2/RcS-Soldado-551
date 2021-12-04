@@ -7,11 +7,8 @@ tempoDano = room_speed / 4;
 vidaMaximaPlayer = 100;
 vidaPlayer = 100;
 arma = 1;
-
-tempoArma = 0;
 tempoMetralhadoura = 500;
 pegouArma = false;
-metralhadouraAtiva = false;
 tempoMetralhadoura = 1000;
 
 

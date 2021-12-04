@@ -52,12 +52,12 @@ MovimentoInimigos = function(vel){
 	if(objGameController.level < 3){
 		if(distancia < 200){ seguirPlayer = true;}
 		if(seguirPlayer){
-			partiuBriga();
-			speed = vel;	
+			partiuBriga();			
 		}
 	}else{
 		partiuBriga();
-	}	
+	}
+	speed = vel;	
 }
 
 bossPedindoAjuda = function(){
