@@ -7,6 +7,7 @@ level = 1;
 proximoLevel = 100;
 bossGerado = false;
 pontos = 0;
+totalInimigos = 0;
 
 inimigoSimples[0] = objPrimeiroInimigo;
 inimigoSimples[1] = objSegundoInimigo;
@@ -32,11 +33,17 @@ global.AdicionaPontos = function(){
 }
 
 BarraDeVida = function(){
-	var escala = 4;
-	draw_sprite_ext(sprFundoBarra, 1, 459, 20, escala, escala, 0, c_white, 1);
-	draw_sprite_ext(sprMarcador, 1, 461, 20, (objPlayer.vidaPlayer / objPlayer.vidaMaximaPlayer) * escala, escala, 0, c_white, 1);
-	draw_sprite_ext(sprBarraVida, 1, 459, 20, escala, escala, 0, c_white, 1);
-	draw_sprite(sprNomePlayer, 1, 11, 10);
+	var escala = 2;
+	draw_sprite_ext(sprFundoBarra, 1, 120, 10, escala, escala, 0, c_white, 1);
+	draw_sprite_ext(sprMarcador, 1, 120, 10, (objPlayer.vidaPlayer / objPlayer.vidaMaximaPlayer) * escala, escala, 0, c_white, 1);
+	draw_sprite_ext(sprBarraVida, 1, 120, 10, escala, escala, 0, c_white, 1);
+		if(objPlayer.arma == 2){
+		draw_sprite(sprQuasdroMetralhadoura, 1, 11, 25);
+		draw_sprite_ext(sprBarraMunicao, 1, 50, 40, (objPlayer.tempoMetralhadoura / objPlayer.tempoMaximoMetralhadoura) * escala, escala, 0, c_white, 1);		
+	}else{		
+		draw_sprite(sprQuadroPistola, 1, 11, 25);
+		draw_sprite(sprSimboloInfinito, 1, 50, 40);
+	}	
 }
 
 sobeLevel = function(){
@@ -49,11 +56,12 @@ sobeLevel = function(){
 MarcadorPontos = function(){
 	draw_set_colour(c_lime);	
 	draw_text(765, 15, "Total Inimigos: ");
-	draw_text(900, 15, numeroInimigos);
+	draw_text(900, 15, totalInimigos);
 	draw_text(965, 15, "Level: ");	
 	draw_text(1020, 15, level);
 	draw_text(1050, 15, "Total Pontos: ");
 	draw_text(1170, 15, pontos);
+	draw_sprite(sprNomePlayer, 1, 11, 15);
 }
 
 CriarPlayer = function(){

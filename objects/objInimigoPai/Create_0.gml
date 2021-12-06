@@ -40,8 +40,9 @@ DanoInimigo = function(vel){
 		global.SubtrairInimigos();		
 		instance_create_layer(x, y, layer, objExplosaoInimigo);
 		audio_play_sound(sndSomGosma, 10, false);
-		instance_create_layer(x, y, layer, objTremeTela);
+		instance_create_layer(x, y, layer, objTremeTela);		
 		instance_destroy();		
+		objGameController.totalInimigos++;
 	}
 	speed = vel;
 }

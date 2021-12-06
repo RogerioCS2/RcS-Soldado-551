@@ -9,8 +9,8 @@
   "swfPrecision": 2.525,
   "bbox_left": 0,
   "bbox_right": 63,
-  "bbox_top": 0,
-  "bbox_bottom": 12,
+  "bbox_top": 1,
+  "bbox_bottom": 11,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,15 +24,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"d46b2b75-ce69-41a9-ba2f-227458729c09","path":"sprites/sprFundoBarra/sprFundoBarra.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d46b2b75-ce69-41a9-ba2f-227458729c09","path":"sprites/sprFundoBarra/sprFundoBarra.yy",},"LayerId":{"name":"0aa674c8-2756-450c-b117-10286e69d3a8","path":"sprites/sprFundoBarra/sprFundoBarra.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprFundoBarra","path":"sprites/sprFundoBarra/sprFundoBarra.yy",},"resourceVersion":"1.0","name":"d46b2b75-ce69-41a9-ba2f-227458729c09","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7b80d6f2-ed8e-4465-9c21-553ad27a9d6b","path":"sprites/sprBarraMunicao/sprBarraMunicao.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7b80d6f2-ed8e-4465-9c21-553ad27a9d6b","path":"sprites/sprBarraMunicao/sprBarraMunicao.yy",},"LayerId":{"name":"7ea2bdac-5cc4-456b-b7eb-390053deddb0","path":"sprites/sprBarraMunicao/sprBarraMunicao.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprBarraMunicao","path":"sprites/sprBarraMunicao/sprBarraMunicao.yy",},"resourceVersion":"1.0","name":"7b80d6f2-ed8e-4465-9c21-553ad27a9d6b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprFundoBarra","path":"sprites/sprFundoBarra/sprFundoBarra.yy",},
+    "spriteId": {"name":"sprBarraMunicao","path":"sprites/sprBarraMunicao/sprBarraMunicao.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 10.0,
+    "playbackSpeed": 30.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"50b97eda-3e2f-4c3a-af6c-23dc4aad5e49","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d46b2b75-ce69-41a9-ba2f-227458729c09","path":"sprites/sprFundoBarra/sprFundoBarra.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8839086b-cae1-4c5f-8d62-69621f2ff6db","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7b80d6f2-ed8e-4465-9c21-553ad27a9d6b","path":"sprites/sprBarraMunicao/sprBarraMunicao.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 6,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprFundoBarra","path":"sprites/sprFundoBarra/sprFundoBarra.yy",},
+    "parent": {"name":"sprBarraMunicao","path":"sprites/sprBarraMunicao/sprBarraMunicao.yy",},
     "resourceVersion": "1.3",
-    "name": "sprFundoBarra",
+    "name": "sprBarraMunicao",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0aa674c8-2756-450c-b117-10286e69d3a8","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7ea2bdac-5cc4-456b-b7eb-390053deddb0","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/ElementosUI.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sprFundoBarra",
+  "name": "sprBarraMunicao",
   "tags": [],
   "resourceType": "GMSprite",
 }

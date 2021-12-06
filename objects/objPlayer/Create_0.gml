@@ -9,7 +9,7 @@ vidaPlayer = 100;
 arma = 1;
 tempoMetralhadoura = 500;
 pegouArma = false;
-tempoMetralhadoura = 1000;
+tempoMaximoMetralhadoura = 500
 
 
 LimitesTela = function(){
