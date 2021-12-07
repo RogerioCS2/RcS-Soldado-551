@@ -7,7 +7,7 @@ pedindoAjuda = false;
 
 AtirandoInimigos = function(){
 	esperandoTiro--;	
-	if(esperandoTiro <= 0 && objGameController.numeroInimigos < 15){
+	if(esperandoTiro <= 0){
 		if(vida < 300){
 			esperandoTiro = room_speed / 2;
 			image_blend = c_red;

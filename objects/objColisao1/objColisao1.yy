@@ -28,7 +28,7 @@
     "path": "folders/Objetos/Cenario.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objColisor",
+  "name": "objColisao1",
   "tags": [],
   "resourceType": "GMObject",
 }

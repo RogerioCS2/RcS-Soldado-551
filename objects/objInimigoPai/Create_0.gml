@@ -36,8 +36,8 @@ DanoInimigo = function(vel){
 	partiuBriga();
 	vida--;
 	if(vida <= 0){
-		global.AdicionaPontos();
-		global.SubtrairInimigos();		
+		global.SubtrairInimigos();
+		global.AdicionaPontos();				
 		instance_create_layer(x, y, layer, objExplosaoInimigo);
 		audio_play_sound(sndSomGosma, 10, false);
 		instance_create_layer(x, y, layer, objTremeTela);		
@@ -61,13 +61,13 @@ MovimentoInimigos = function(vel){
 	speed = vel;	
 }
 
-bossPedindoAjuda = function(){
+bossPedindoAjuda = function(vel1, vel2){
 	if(objGameController.pedindoAjuda == true && boss = false){
-		show_debug_message("Atacar");
+		//show_debug_message("Atacar");
 		partiuBriga();
-		speed = 2;		
+		speed = vel1;		
 	}
 	if(objGameController.pedindoAjuda == false && boss = false){		
-		speed = 1;
+		speed = vel2;
 	}
 }

@@ -1,4 +1,4 @@
 /// @description Insert description here
 MovimentoInimigos(2);
 DestroindoLimites();
-bossPedindoAjuda();
+bossPedindoAjuda(3, 2);

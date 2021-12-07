@@ -1,0 +1,4 @@
+/// @description
+SelecionandoOpcoes();
+ReiniciarJogo();
+FimJogo();

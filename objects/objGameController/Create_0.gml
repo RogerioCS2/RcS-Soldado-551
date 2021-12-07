@@ -8,6 +8,8 @@ proximoLevel = 100;
 bossGerado = false;
 pontos = 0;
 totalInimigos = 0;
+bossDetruido = false;
+tempoFinal = 300;
 
 inimigoSimples[0] = objPrimeiroInimigo;
 inimigoSimples[1] = objSegundoInimigo;
@@ -19,9 +21,6 @@ global.AdicionarInimigos = function(){
 
 global.SubtrairInimigos = function(){
 	numeroInimigos--;
-	if(numeroInimigos < 0){
-		game_restart();
-	}
 }
 
 global.HelpBoss = function(){	
@@ -81,10 +80,10 @@ criarInimigosSimples = function(){
 	}	
 	
 	if(numeroInimigos < 25 && !bossGerado){
-		if(level < 7){
-			numeroInimigos++;
+		if(level < 7){			
 			instance_create_layer(posicaoX, posicaoY, "Inimigos", inimigoSimples[inimigo]);
 		}
+		numeroInimigos++;
 	}
 }
 

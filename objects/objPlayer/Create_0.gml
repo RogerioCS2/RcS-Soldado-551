@@ -71,6 +71,6 @@ LevandoDano = function(){
 		}
 	}
 	if(vidaPlayer <= 0){
-		game_restart();
+		room_goto(GameOver);
 	}
 }

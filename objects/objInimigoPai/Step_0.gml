@@ -1,4 +1,4 @@
 /// @description Update
 MovimentoInimigos(1);
 DestroindoLimites();
-bossPedindoAjuda();
+bossPedindoAjuda(2, 1);
